@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareClassLibrary", "AreaC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{0A3B8FBC-3FA3-463E-B2E9-B204F816A932}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task items", "Task items", "{33758227-2AC2-4BC1-A4F8-0F17FFB63B5F}"
+	ProjectSection(SolutionItems) = preProject
+		ProductsQuery.sql = ProductsQuery.sql
+		TestData.sql = TestData.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
