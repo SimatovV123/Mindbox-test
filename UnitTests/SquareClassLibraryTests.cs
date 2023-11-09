@@ -39,7 +39,7 @@ namespace UnitTests
         [Test]
         public void TriangleRectangularTest()
         {
-            var isTriangleRectangular = new Triangle(7, 24, 25).IsRectangular;
+            var isTriangleRectangular = new Triangle(7, 24, 25).IsRectangular(1E-6);
 
             Assert.AreEqual(true, isTriangleRectangular);
         }

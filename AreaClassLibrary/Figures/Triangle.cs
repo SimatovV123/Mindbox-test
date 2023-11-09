@@ -42,15 +42,12 @@ namespace AreaClassLibrary.Figures
         /// <summary>
         /// Indicates whether triangle is rectangular
         /// </summary>
-        public bool IsRectangular
+        public bool IsRectangular(double delta)
         {
-            get
-            {
-                var max = new double[] { A, B, C }.Max();
-                var maxSqr = max * max;
+            var max = new double[] { A, B, C }.Max();
+            var maxSqr = max * max;
 
-                return maxSqr + maxSqr == A * A + B * B + C * C;
-            }
+            return (maxSqr + maxSqr) - (A * A + B * B + C * C) <= delta;
         }
 
         /// <summary>

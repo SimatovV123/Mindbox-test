@@ -11,7 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\Unit
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task items", "Task items", "{33758227-2AC2-4BC1-A4F8-0F17FFB63B5F}"
 	ProjectSection(SolutionItems) = preProject
+		categories_table.PNG = categories_table.PNG
+		productcats_table.PNG = productcats_table.PNG
+		products_table.PNG = products_table.PNG
 		ProductsQuery.sql = ProductsQuery.sql
+		result.PNG = result.PNG
 		TestData.sql = TestData.sql
 	EndProjectSection
 EndProject

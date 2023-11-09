@@ -11,8 +11,8 @@ namespace ZadanieApp
             Triangle triangleRect = new Triangle(7, 24, 25);
             Triangle triangle = new Triangle(10, 24, 25);
 
-            Console.WriteLine(triangleRect.IsRectangular);
-            Console.WriteLine(triangle.IsRectangular);
+            Console.WriteLine(triangleRect.IsRectangular(1E-6));
+            Console.WriteLine(triangle.IsRectangular(1E-6));
 
             var figures = new[] { circle, triangleRect, triangle };
 
