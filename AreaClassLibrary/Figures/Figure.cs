@@ -1,5 +1,5 @@
 ﻿
-namespace AreaClassLibrary.Figures
+namespace SquareClassLibrary.Figures
 {
     public abstract class Figure
     {

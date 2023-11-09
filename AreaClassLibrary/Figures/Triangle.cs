@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace AreaClassLibrary.Figures
+namespace SquareClassLibrary.Figures
 {
 
     public class Triangle : Figure

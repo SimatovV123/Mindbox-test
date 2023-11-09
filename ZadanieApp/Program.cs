@@ -1,4 +1,4 @@
-﻿using AreaClassLibrary.Figures;
+﻿using SquareClassLibrary.Figures;
 using System;
 
 namespace ZadanieApp

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AreaClassLibrary.Figures
+namespace SquareClassLibrary.Figures
 {
     public class Circle : Figure
     {
