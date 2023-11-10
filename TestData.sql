@@ -20,26 +20,27 @@ CREATE TABLE ProductCats
 	FOREIGN KEY (ProductId)  REFERENCES Products (Id),
 	FOREIGN KEY (CategoryId)  REFERENCES Categories (Id)
 )
+GO
 
-insert into Products values (NEWID(), 50, 'Rye bread', 12)
-insert into Products values (NEWID(), 55, 'Wheat bread', 10)
-insert into Products values (NEWID(), 30, 'Bun', 12)
-insert into Products values (NEWID(), 150, 'Herring', 12)
-insert into Products values (NEWID(), 130, 'Mackerel', 12)
-insert into Products values (NEWID(), 150, 'Chicken', 12)
-insert into Products values (NEWID(), 400, 'Beef', 12)
-insert into Products values (NEWID(), 200, 'Chicken fillet', 12)
-insert into Products values (NEWID(), 70, 'Macaron', 12)
-insert into Products values (NEWID(), 70, 'Gum', 12)
-insert into Products values (NEWID(), 70, 'Apple juice', 12)
+insert into Products values (NEWID(), 50, 'Rye bread', 12),
+(NEWID(), 55, 'Wheat bread', 10),
+(NEWID(), 30, 'Bun', 12),
+(NEWID(), 150, 'Herring', 12),
+(NEWID(), 130, 'Mackerel', 12),
+(NEWID(), 150, 'Chicken', 12),
+(NEWID(), 400, 'Beef', 12),
+(NEWID(), 200, 'Chicken fillet', 12),
+(NEWID(), 70, 'Macaron', 12),
+(NEWID(), 70, 'Gum', 12),
+(NEWID(), 70, 'Apple juice', 12)
 
 
-insert into Categories values (NEWID(), 'Bread')
-insert into Categories values (NEWID(), 'Meat')
-insert into Categories values (NEWID(), 'Poultry meat')
-insert into Categories values (NEWID(), 'Fish')
-insert into Categories values (NEWID(), 'Bakery')
-insert into Categories values (NEWID(), 'Flour')
+insert into Categories values (NEWID(), 'Bread'),
+(NEWID(), 'Meat'),
+(NEWID(), 'Poultry meat'),
+(NEWID(), 'Fish'),
+(NEWID(), 'Bakery'),
+(NEWID(), 'Flour')
 
 insert into ProductCats values 
 (newId(),
@@ -80,6 +81,7 @@ insert into ProductCats values
 (newId(), 
 (select Id from Products where Name = 'Bun'),
 (select Id from Categories where Name = 'Flour'))
+
 insert into ProductCats values
 (newId(), 
 (select Id from Products where Name = 'Bun'),
